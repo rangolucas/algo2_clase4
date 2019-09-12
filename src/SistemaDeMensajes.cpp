@@ -39,8 +39,8 @@ void SistemaDeMensajes::desregistrarJugador(int id) {
     _conns[id] = nullptr;
 }
 
-////Ejercicio 4
-////Pre: registrado(id)
+//Ejercicio 4
+//Pre: registrado(id)
 //Proxy* SistemaDeMensajes::obtenerProxy(int id) {
 //    ConexionJugador *pJugador = _conns[id];
 //    delete _proxies[id];
@@ -49,6 +49,13 @@ void SistemaDeMensajes::desregistrarJugador(int id) {
 //    return newProxy;
 //}
 
+Proxy* SistemaDeMensajes::obtenerProxy(int id) {
+    ConexionJugador *pJugador = _conns[id];
+    delete _proxies[id];
+    Proxy *newProxy = new Proxy(&pJugador);
+    _proxies[id] = newProxy;
+    return newProxy;
+}
 
 
 

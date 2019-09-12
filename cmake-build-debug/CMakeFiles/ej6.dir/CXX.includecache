@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home2/clinux01/Documents/ejercitacion_punteros/src/ConexionJugador.h
+Internet.h
+/home2/clinux01/Documents/ejercitacion_punteros/src/Internet.h
+string
+-
+
+/home2/clinux01/Documents/ejercitacion_punteros/src/Internet.h
+list
+-
+utility
+-
+string
+-
+
+/home2/clinux01/Documents/ejercitacion_punteros/src/Proxy2.cpp
+Proxy2.h
+/home2/clinux01/Documents/ejercitacion_punteros/src/Proxy2.h
+
+/home2/clinux01/Documents/ejercitacion_punteros/src/Proxy2.h
+ConexionJugador.h
+/home2/clinux01/Documents/ejercitacion_punteros/src/ConexionJugador.h
+string
+-
+
